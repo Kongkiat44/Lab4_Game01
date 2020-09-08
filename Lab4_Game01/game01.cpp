@@ -22,19 +22,19 @@ int main() {
 	gotoxy(0, 0);
 	printf("Testing...");
 	for (int a = 0; a < 80;) {
-		draw_ship(a, y);
+		draw_ship(a, 20);
 		a++;
 		Sleep(500);
 		if (a == 80) {
 			for (int b = a; b > 0;) {
-				draw_ship(b, y);
+				draw_ship(b, 20);
 				b--;
 				Sleep(500);
 			}
 		}
 	}
 	clean_line(0);
-	clean_line(y);
+	clean_line(20);
 	draw_ship(x, y);
 	do {
 		if (_kbhit()) {
